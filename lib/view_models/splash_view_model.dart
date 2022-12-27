@@ -3,7 +3,7 @@ import 'package:location/location.dart';
 import 'package:working_with_maps/data/models/lat_long.dart';
 
 class SplashViewModel extends ChangeNotifier {
-  LatLong? latLong;
+  late LatLong latLong;
 
   SplashViewModel() {
     fetchCurrentLocation();
@@ -36,7 +36,7 @@ class SplashViewModel extends ChangeNotifier {
     // lakatsiyani oladi
     LocationData locationData = await location.getLocation();
     latLong = LatLong(
-      lantitude: locationData.latitude!,
+      lattitude: locationData.latitude!,
       longtitude: locationData.longitude!,
     );
     await Future.delayed(const Duration(seconds: 3));

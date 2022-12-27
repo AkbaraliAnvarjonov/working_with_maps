@@ -1,6 +1,6 @@
 class LatLong {
-  double lantitude;
+  double lattitude;
   double longtitude;
 
-  LatLong({required this.lantitude, required this.longtitude});
+  LatLong({required this.lattitude, required this.longtitude});
 }
